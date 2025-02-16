@@ -1,2 +1,68 @@
-<h1>Welcome to Kusum Furnitures</h1>
-<p>Website under construction...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusum Furnitures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #f8f9fa; padding: 20px; }
+        .logo { max-width: 150px; }
+        nav ul { list-style: none; padding: 0; background: #333; overflow: hidden; }
+        nav ul li { display: inline; padding: 15px; }
+        nav ul li a { color: white; text-decoration: none; }
+        section { padding: 20px; }
+        .gallery { display: flex; justify-content: center; flex-wrap: wrap; }
+        .item { margin: 10px; cursor: pointer; }
+        .item img { max-width: 200px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Kusum Furnitures Logo" class="logo">
+        <h1>Welcome to Kusum Furnitures</h1>
+        <p>Your one-stop destination for premium furniture and interior design.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Kusum Furnitures, we provide top-quality sofas, custom furniture, and complete interior design solutions. Our craftsmanship ensures elegance and durability.</p>
+    </section>
+
+    <section id="browse">
+        <h2>Browse Our Collection</h2>
+        <div class="gallery">
+            <div class="item" onclick="showContact()">
+                <img src="sofa1.jpg" alt="Luxury Sofa">
+                <p>Luxury Sofa</p>
+            </div>
+            <div class="item" onclick="showContact()">
+                <img src="table1.jpg" alt="Wooden Table">
+                <p>Wooden Table</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: +91 XXXXXXXXXX</p>
+        <p>📩 Email: contact@kusumfurnitures.com</p>
+        <p>📷 Instagram: <a href="https://instagram.com/youraccount" target="_blank">@kusumfurnitures</a></p>
+    </section>
+
+    <script>
+        function showContact() {
+            alert("To purchase this product, contact us via Instagram or phone.");
+        }
+    </script>
+</body>
+</html>
