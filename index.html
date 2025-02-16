@@ -6,21 +6,82 @@
     <title>Kusum Furnitures</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #f8f9fa; padding: 20px; }
-        .logo { max-width: 150px; }
-        nav ul { list-style: none; padding: 0; background: #333; overflow: hidden; }
-        nav ul li { display: inline; padding: 15px; }
-        nav ul li a { color: white; text-decoration: none; }
-        section { padding: 20px; }
-        .gallery { display: flex; justify-content: center; flex-wrap: wrap; }
-        .item { margin: 10px; cursor: pointer; }
-        .item img { max-width: 200px; border-radius: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        .logo {
+            max-width: 150px;
+            animation: fadeIn 2s;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f4b400;
+        }
+        section {
+            padding: 40px 20px;
+            animation: fadeInUp 1s;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            max-width: 250px;
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Kusum Furnitures Logo" class="logo">
+        <img src="https://via.placeholder.com/150" alt="Kusum Furnitures Logo" class="logo">
         <h1>Welcome to Kusum Furnitures</h1>
         <p>Your one-stop destination for premium furniture and interior design.</p>
     </header>
@@ -42,12 +103,16 @@
         <h2>Browse Our Collection</h2>
         <div class="gallery">
             <div class="item" onclick="showContact()">
-                <img src="sofa1.jpg" alt="Luxury Sofa">
+                <img src="https://source.unsplash.com/400x300/?sofa,furniture" alt="Luxury Sofa">
                 <p>Luxury Sofa</p>
             </div>
             <div class="item" onclick="showContact()">
-                <img src="table1.jpg" alt="Wooden Table">
+                <img src="https://source.unsplash.com/400x300/?table,furniture" alt="Wooden Table">
                 <p>Wooden Table</p>
+            </div>
+            <div class="item" onclick="showContact()">
+                <img src="https://source.unsplash.com/400x300/?chair,furniture" alt="Modern Chair">
+                <p>Modern Chair</p>
             </div>
         </div>
     </section>
