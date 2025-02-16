@@ -3,130 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kusum Furnitures</title>
+    <title>Kusum Furnitures - Luxury & Elegance</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: #111;
+            color: #fff;
             text-align: center;
-            background: #f5f5f5;
-            color: #333;
         }
         header {
             background: #222;
-            color: white;
-            padding: 20px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-        }
-        .logo {
-            max-width: 150px;
-            animation: fadeIn 2s;
+            color: #f4b400;
+            padding: 40px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         nav ul {
             list-style: none;
             padding: 0;
-            background: #444;
+            background: #333;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 10px;
+            gap: 30px;
+            padding: 15px;
         }
         nav ul li {
             display: inline;
         }
         nav ul li a {
-            color: white;
+            color: #f4b400;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
             transition: 0.3s;
         }
         nav ul li a:hover {
-            color: #f4b400;
+            color: #fff;
         }
         section {
-            padding: 40px 20px;
-            animation: fadeInUp 1s;
+            padding: 60px 20px;
         }
         .gallery {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px;
         }
         .item {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
+            background: #222;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .item:hover {
-            transform: scale(1.05);
+            transform: scale(1.08);
+            box-shadow: 0px 10px 25px rgba(255, 204, 0, 0.4);
         }
         .item img {
-            max-width: 250px;
-            border-radius: 10px;
+            max-width: 300px;
+            border-radius: 12px;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        footer {
+            background: #222;
+            color: #f4b400;
+            padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150" alt="Kusum Furnitures Logo" class="logo">
-        <h1>Welcome to Kusum Furnitures</h1>
-        <p>Your one-stop destination for premium furniture and interior design.</p>
+        Kusum Furnitures - Luxury & Elegance
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#browse">Browse</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    
     <section id="about">
-        <h2>About Us</h2>
-        <p>At Kusum Furnitures, we provide top-quality sofas, custom furniture, and complete interior design solutions. Our craftsmanship ensures elegance and durability.</p>
+        <h2>About Kusum Furnitures</h2>
+        <p>We craft high-end, luxurious furniture with premium materials to redefine elegance in your space.</p>
     </section>
-
+    
     <section id="browse">
-        <h2>Browse Our Collection</h2>
+        <h2>Explore Our Collection</h2>
         <div class="gallery">
             <div class="item" onclick="showContact()">
-                <img src="https://source.unsplash.com/400x300/?sofa,furniture" alt="Luxury Sofa">
+                <img src="https://source.unsplash.com/400x300/?luxury,sofa" alt="Luxury Sofa">
                 <p>Luxury Sofa</p>
             </div>
             <div class="item" onclick="showContact()">
-                <img src="https://source.unsplash.com/400x300/?table,furniture" alt="Wooden Table">
-                <p>Wooden Table</p>
+                <img src="https://source.unsplash.com/400x300/?premium,dining" alt="Premium Dining Table">
+                <p>Premium Dining Table</p>
             </div>
             <div class="item" onclick="showContact()">
-                <img src="https://source.unsplash.com/400x300/?chair,furniture" alt="Modern Chair">
+                <img src="https://source.unsplash.com/400x300/?modern,chair" alt="Modern Chair">
                 <p>Modern Chair</p>
             </div>
         </div>
     </section>
-
+    
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Get in Touch</h2>
         <p>📞 Phone: +91 XXXXXXXXXX</p>
         <p>📩 Email: contact@kusumfurnitures.com</p>
         <p>📷 Instagram: <a href="https://instagram.com/youraccount" target="_blank">@kusumfurnitures</a></p>
     </section>
-
+    
+    <footer>
+        &copy; 2025 Kusum Furnitures. All Rights Reserved.
+    </footer>
+    
     <script>
         function showContact() {
-            alert("To purchase this product, contact us via Instagram or phone.");
+            alert("To inquire about this product, contact us on Instagram or call us.");
         }
     </script>
 </body>
